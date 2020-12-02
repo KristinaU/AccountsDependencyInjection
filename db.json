@@ -1,0 +1,51 @@
+{
+    "accounts":
+
+[
+    {
+        "opening date": "25/09/2011",
+        "kind": "current",
+        "title": "Current Account",
+        "number": "NL25 TRIO 0253 8443 20",
+        "balance": 1000,
+        "currency": "GBP",
+        "transactions": ["Transaction 1", "Transaction 2", "Transaction 3"]
+    },
+    {
+        "opening date": "15/09/2001",
+        "kind": "current",
+        "title": "Joint Account",
+        "number": "NL25 TRIO 0269 8445 60",
+        "balance": 1500.20,
+        "currency": "USD",
+        "transactions": ["24/09/2020: £150.89", "23/09/2020: £170.89", "23/09/2020: £177.14"]
+    },
+    {
+        "opening date": "01/02/2010",
+        "kind": "savings",
+        "title": "Savings Account",
+        "number": "NL81 TRIO 0212  4710 66",
+        "balance": 0,
+        "currency": "GBP",
+        "transactions": ["24/09/2020: +£150.89", "23/09/2020: -£170.89", "23/09/2020: +£177.14"]
+    },
+    {
+        "opening date": "25/12/2013",
+        "kind": "term",
+        "title": "Term Deposit",
+        "number": "NL81 TRIO 0212 4710 66",
+        "balance": 13210.47,
+        "currency": "GBP",
+        "transactions": ["24/09/2020: +£150.89", "23/09/2020: +£170.89"]
+    },
+    {
+        "opening date": "27/04/2018",
+        "kind": "loan",
+        "title": "Our home loan",
+        "number": "NL25 TRIO 0253 8443 20",
+        "balance": 150000,
+        "currency": "GBP",
+        "transactions": ["24/09/2020: -£198.60", "24/08/2020: -£198.60", "23/07/2020: -£198.60"]
+    }
+]
+}
