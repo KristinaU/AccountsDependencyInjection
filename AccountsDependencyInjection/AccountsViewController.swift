@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class AccountsViewController: UIViewController {
 
     @IBOutlet weak var mainTableView: UITableView!
     
@@ -17,7 +17,7 @@ class ViewController: UIViewController {
         super.init(coder: coder)
     }
 
-    let client = AccountsClient()
+    var client = AccountsClient()
     
     var viewModel: AccountsViewModel
 
@@ -31,7 +31,7 @@ class ViewController: UIViewController {
     }
 }
 
-extension ViewController: UITableViewDataSource {
+extension AccountsViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return viewModel.getList().count
         

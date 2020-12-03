@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		D789C19C2577B09E0002186B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D789C19B2577B09E0002186B /* AppDelegate.swift */; };
 		D789C19E2577B09E0002186B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D789C19D2577B09E0002186B /* SceneDelegate.swift */; };
-		D789C1A02577B09E0002186B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D789C19F2577B09E0002186B /* ViewController.swift */; };
+		D789C1A02577B09E0002186B /* AccountsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D789C19F2577B09E0002186B /* AccountsViewController.swift */; };
 		D789C1A32577B09E0002186B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D789C1A12577B09E0002186B /* Main.storyboard */; };
 		D789C1A52577B0A60002186B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D789C1A42577B0A60002186B /* Assets.xcassets */; };
 		D789C1A82577B0A60002186B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D789C1A62577B0A60002186B /* LaunchScreen.storyboard */; };
@@ -18,6 +18,7 @@
 		D789C1C825782FA50002186B /* AccountsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D789C1C725782FA50002186B /* AccountsModel.swift */; };
 		D789C1CA25782FDB0002186B /* AccountsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D789C1C925782FDB0002186B /* AccountsViewModel.swift */; };
 		D789C1CC257830030002186B /* AccountsClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D789C1CB257830030002186B /* AccountsClient.swift */; };
+		D789C1CE25788F3F0002186B /* AccountsInjector.swift in Sources */ = {isa = PBXBuildFile; fileRef = D789C1CD25788F3F0002186B /* AccountsInjector.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,7 +35,7 @@
 		D789C1982577B09E0002186B /* AccountsDependencyInjection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AccountsDependencyInjection.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D789C19B2577B09E0002186B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D789C19D2577B09E0002186B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D789C19F2577B09E0002186B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D789C19F2577B09E0002186B /* AccountsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsViewController.swift; sourceTree = "<group>"; };
 		D789C1A22577B09E0002186B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D789C1A42577B0A60002186B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D789C1A72577B0A60002186B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -46,6 +47,7 @@
 		D789C1C725782FA50002186B /* AccountsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsModel.swift; sourceTree = "<group>"; };
 		D789C1C925782FDB0002186B /* AccountsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsViewModel.swift; sourceTree = "<group>"; };
 		D789C1CB257830030002186B /* AccountsClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsClient.swift; sourceTree = "<group>"; };
+		D789C1CD25788F3F0002186B /* AccountsInjector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsInjector.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,7 +92,7 @@
 			children = (
 				D789C19B2577B09E0002186B /* AppDelegate.swift */,
 				D789C19D2577B09E0002186B /* SceneDelegate.swift */,
-				D789C19F2577B09E0002186B /* ViewController.swift */,
+				D789C19F2577B09E0002186B /* AccountsViewController.swift */,
 				D789C1A12577B09E0002186B /* Main.storyboard */,
 				D789C1A42577B0A60002186B /* Assets.xcassets */,
 				D789C1A62577B0A60002186B /* LaunchScreen.storyboard */,
@@ -98,6 +100,7 @@
 				D789C1C725782FA50002186B /* AccountsModel.swift */,
 				D789C1C925782FDB0002186B /* AccountsViewModel.swift */,
 				D789C1CB257830030002186B /* AccountsClient.swift */,
+				D789C1CD25788F3F0002186B /* AccountsInjector.swift */,
 			);
 			path = AccountsDependencyInjection;
 			sourceTree = "<group>";
@@ -214,8 +217,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				D789C1CC257830030002186B /* AccountsClient.swift in Sources */,
+				D789C1CE25788F3F0002186B /* AccountsInjector.swift in Sources */,
 				D789C1CA25782FDB0002186B /* AccountsViewModel.swift in Sources */,
-				D789C1A02577B09E0002186B /* ViewController.swift in Sources */,
+				D789C1A02577B09E0002186B /* AccountsViewController.swift in Sources */,
 				D789C19C2577B09E0002186B /* AppDelegate.swift in Sources */,
 				D789C19E2577B09E0002186B /* SceneDelegate.swift in Sources */,
 				D789C1C825782FA50002186B /* AccountsModel.swift in Sources */,
