@@ -15,6 +15,9 @@
 		D789C1A82577B0A60002186B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D789C1A62577B0A60002186B /* LaunchScreen.storyboard */; };
 		D789C1B32577B0A60002186B /* AccountsDependencyInjectionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D789C1B22577B0A60002186B /* AccountsDependencyInjectionTests.swift */; };
 		D789C1BE2577B0E90002186B /* Accounts.json in Resources */ = {isa = PBXBuildFile; fileRef = D789C1BD2577B0E90002186B /* Accounts.json */; };
+		D789C1C825782FA50002186B /* AccountsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D789C1C725782FA50002186B /* AccountsModel.swift */; };
+		D789C1CA25782FDB0002186B /* AccountsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D789C1C925782FDB0002186B /* AccountsViewModel.swift */; };
+		D789C1CC257830030002186B /* AccountsClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D789C1CB257830030002186B /* AccountsClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +42,10 @@
 		D789C1AE2577B0A60002186B /* AccountsDependencyInjectionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AccountsDependencyInjectionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D789C1B22577B0A60002186B /* AccountsDependencyInjectionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsDependencyInjectionTests.swift; sourceTree = "<group>"; };
 		D789C1B42577B0A60002186B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D789C1BD2577B0E90002186B /* Accounts.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Accounts.json; path = AccountsDependencyInjection/Accounts.json; sourceTree = SOURCE_ROOT; };
+		D789C1BD2577B0E90002186B /* Accounts.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Accounts.json; sourceTree = SOURCE_ROOT; };
+		D789C1C725782FA50002186B /* AccountsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsModel.swift; sourceTree = "<group>"; };
+		D789C1C925782FDB0002186B /* AccountsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsViewModel.swift; sourceTree = "<group>"; };
+		D789C1CB257830030002186B /* AccountsClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +69,7 @@
 		D789C18F2577B09E0002186B = {
 			isa = PBXGroup;
 			children = (
+				D789C1BD2577B0E90002186B /* Accounts.json */,
 				D789C19A2577B09E0002186B /* AccountsDependencyInjection */,
 				D789C1B12577B0A60002186B /* AccountsDependencyInjectionTests */,
 				D789C1992577B09E0002186B /* Products */,
@@ -81,7 +88,6 @@
 		D789C19A2577B09E0002186B /* AccountsDependencyInjection */ = {
 			isa = PBXGroup;
 			children = (
-				D789C1BD2577B0E90002186B /* Accounts.json */,
 				D789C19B2577B09E0002186B /* AppDelegate.swift */,
 				D789C19D2577B09E0002186B /* SceneDelegate.swift */,
 				D789C19F2577B09E0002186B /* ViewController.swift */,
@@ -89,6 +95,9 @@
 				D789C1A42577B0A60002186B /* Assets.xcassets */,
 				D789C1A62577B0A60002186B /* LaunchScreen.storyboard */,
 				D789C1A92577B0A60002186B /* Info.plist */,
+				D789C1C725782FA50002186B /* AccountsModel.swift */,
+				D789C1C925782FDB0002186B /* AccountsViewModel.swift */,
+				D789C1CB257830030002186B /* AccountsClient.swift */,
 			);
 			path = AccountsDependencyInjection;
 			sourceTree = "<group>";
@@ -204,9 +213,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D789C1CC257830030002186B /* AccountsClient.swift in Sources */,
+				D789C1CA25782FDB0002186B /* AccountsViewModel.swift in Sources */,
 				D789C1A02577B09E0002186B /* ViewController.swift in Sources */,
 				D789C19C2577B09E0002186B /* AppDelegate.swift in Sources */,
 				D789C19E2577B09E0002186B /* SceneDelegate.swift in Sources */,
+				D789C1C825782FA50002186B /* AccountsModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
