@@ -34,7 +34,6 @@ class AccountsClient {
         }
     }
     
-
     func loadJson(fromURLString urlString: String,
                   completion: @escaping (Result<Data, Error>) -> Void) {
 

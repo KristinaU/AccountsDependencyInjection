@@ -11,23 +11,19 @@ import UIKit
 
 class AccountsInjector {
     
-    let coder = NSCoder()
+    func setup() -> AccountsViewModel {
     
-    func setup() -> UIViewController {
-    
-        let viewController = AccountsViewController(coder: coder)
+        let client = AccountsClient()
         
-        viewController?.client = AccountsClient()
+        let viewModel = AccountsViewModel(client: client)
         
-        return viewController!
+        viewModel.load()
+        
+        return viewModel
         
     }
     
-    
-    
 }
-
-    
 
 
 

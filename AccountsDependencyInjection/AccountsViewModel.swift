@@ -10,7 +10,7 @@ import Foundation
 
 class AccountsViewModel {
     
-    var client = AccountsClient()
+    var client: AccountsClient
     
     init(client: AccountsClient) {
          self.client = client

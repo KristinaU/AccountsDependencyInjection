@@ -19,6 +19,8 @@
 		D789C1CA25782FDB0002186B /* AccountsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D789C1C925782FDB0002186B /* AccountsViewModel.swift */; };
 		D789C1CC257830030002186B /* AccountsClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D789C1CB257830030002186B /* AccountsClient.swift */; };
 		D789C1CE25788F3F0002186B /* AccountsInjector.swift in Sources */ = {isa = PBXBuildFile; fileRef = D789C1CD25788F3F0002186B /* AccountsInjector.swift */; };
+		D789C1D0257894920002186B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D789C1CF257894920002186B /* ViewController.swift */; };
+		D789C1D22578A1D80002186B /* UIElementsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D789C1D12578A1D80002186B /* UIElementsTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,8 @@
 		D789C1C925782FDB0002186B /* AccountsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsViewModel.swift; sourceTree = "<group>"; };
 		D789C1CB257830030002186B /* AccountsClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsClient.swift; sourceTree = "<group>"; };
 		D789C1CD25788F3F0002186B /* AccountsInjector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsInjector.swift; sourceTree = "<group>"; };
+		D789C1CF257894920002186B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D789C1D12578A1D80002186B /* UIElementsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIElementsTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +96,7 @@
 			children = (
 				D789C19B2577B09E0002186B /* AppDelegate.swift */,
 				D789C19D2577B09E0002186B /* SceneDelegate.swift */,
+				D789C1CF257894920002186B /* ViewController.swift */,
 				D789C19F2577B09E0002186B /* AccountsViewController.swift */,
 				D789C1A12577B09E0002186B /* Main.storyboard */,
 				D789C1A42577B0A60002186B /* Assets.xcassets */,
@@ -110,6 +115,7 @@
 			children = (
 				D789C1B22577B0A60002186B /* AccountsDependencyInjectionTests.swift */,
 				D789C1B42577B0A60002186B /* Info.plist */,
+				D789C1D12578A1D80002186B /* UIElementsTests.swift */,
 			);
 			path = AccountsDependencyInjectionTests;
 			sourceTree = "<group>";
@@ -222,6 +228,7 @@
 				D789C1A02577B09E0002186B /* AccountsViewController.swift in Sources */,
 				D789C19C2577B09E0002186B /* AppDelegate.swift in Sources */,
 				D789C19E2577B09E0002186B /* SceneDelegate.swift in Sources */,
+				D789C1D0257894920002186B /* ViewController.swift in Sources */,
 				D789C1C825782FA50002186B /* AccountsModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -230,6 +237,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D789C1D22578A1D80002186B /* UIElementsTests.swift in Sources */,
 				D789C1B32577B0A60002186B /* AccountsDependencyInjectionTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

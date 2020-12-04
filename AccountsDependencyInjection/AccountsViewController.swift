@@ -8,31 +8,30 @@
 
 import UIKit
 
-class AccountsViewController: UIViewController {
+class AccountsViewController: UIViewController, UITableViewDataSource {
 
     @IBOutlet weak var mainTableView: UITableView!
     
-    required init? (coder: NSCoder) {
-        viewModel = AccountsViewModel(client: client)
+    var viewModel: AccountsViewModel
+
+    init?(coder: NSCoder, viewModel: AccountsViewModel) {
+        self.viewModel = viewModel
         super.init(coder: coder)
     }
 
-    var client = AccountsClient()
+    required init?(coder: NSCoder) {
+        fatalError("You must create this view controller with a viewModel.")
+    }
     
-    var viewModel: AccountsViewModel
-
     override func viewDidLoad() {
+        
         super.viewDidLoad()
         
-        self.viewModel.load()
-        
         self.mainTableView.dataSource = self
-        
     }
-}
 
-extension AccountsViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        
         return viewModel.getList().count
         
     }
