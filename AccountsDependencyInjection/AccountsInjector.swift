@@ -12,7 +12,7 @@ import UIKit
 class AccountsInjector {
     
     func setup() -> AccountsViewModel {
-    
+        
         let client = AccountsClient()
         
         let viewModel = AccountsViewModel(client: client)
@@ -24,6 +24,3 @@ class AccountsInjector {
     }
     
 }
-
-
-

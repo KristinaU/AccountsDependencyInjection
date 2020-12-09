@@ -60,6 +60,7 @@ class AccountsClient {
 
             if let data = data, let _ = String(data: data, encoding: .utf8) {
                 completion(.success(data))
+                print("Ok")
             }
 
         }
@@ -73,6 +74,7 @@ class AccountsClient {
         self.loadJson(fromURLString: self.urlString) { (result) in
             switch result {
             case .success(let data):
+                print(data)
                 self.parse(jsonData: data)
                 self.arrayCompletion = true
 

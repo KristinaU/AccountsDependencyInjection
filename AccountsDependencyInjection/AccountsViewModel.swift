@@ -25,6 +25,7 @@ class AccountsViewModel {
     }
     
     func getList() -> [String] {
+        
         if (client.arrayCompletion) {
             return client.titlesArray
         }
