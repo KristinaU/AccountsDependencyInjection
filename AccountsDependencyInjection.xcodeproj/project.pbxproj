@@ -21,6 +21,8 @@
 		D789C1CE25788F3F0002186B /* AccountsInjector.swift in Sources */ = {isa = PBXBuildFile; fileRef = D789C1CD25788F3F0002186B /* AccountsInjector.swift */; };
 		D789C1D0257894920002186B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D789C1CF257894920002186B /* ViewController.swift */; };
 		D789C1D42580E6270002186B /* AccountsModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D789C1D32580E6270002186B /* AccountsModelTests.swift */; };
+		D789C1D6258376BC0002186B /* AccountsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D789C1D5258376BC0002186B /* AccountsViewModelTests.swift */; };
+		D7BED4C125A521A100041DAF /* AccountsInjectorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7BED4BE25A5213300041DAF /* AccountsInjectorTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +54,8 @@
 		D789C1CD25788F3F0002186B /* AccountsInjector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsInjector.swift; sourceTree = "<group>"; };
 		D789C1CF257894920002186B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D789C1D32580E6270002186B /* AccountsModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsModelTests.swift; sourceTree = "<group>"; };
+		D789C1D5258376BC0002186B /* AccountsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsViewModelTests.swift; sourceTree = "<group>"; };
+		D7BED4BE25A5213300041DAF /* AccountsInjectorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsInjectorTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +119,8 @@
 			children = (
 				D789C1B22577B0A60002186B /* AccountsDependencyInjectionTests.swift */,
 				D789C1D32580E6270002186B /* AccountsModelTests.swift */,
+				D789C1D5258376BC0002186B /* AccountsViewModelTests.swift */,
+				D7BED4BE25A5213300041DAF /* AccountsInjectorTests.swift */,
 				D789C1B42577B0A60002186B /* Info.plist */,
 			);
 			path = AccountsDependencyInjectionTests;
@@ -239,6 +245,8 @@
 			files = (
 				D789C1B32577B0A60002186B /* AccountsDependencyInjectionTests.swift in Sources */,
 				D789C1D42580E6270002186B /* AccountsModelTests.swift in Sources */,
+				D789C1D6258376BC0002186B /* AccountsViewModelTests.swift in Sources */,
+				D7BED4C125A521A100041DAF /* AccountsInjectorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

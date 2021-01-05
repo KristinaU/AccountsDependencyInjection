@@ -16,24 +16,25 @@ class AccountsClient {
     var arrayCompletion = false
     
     func parse(jsonData: Data) -> Void {
-        
+
         let decoder = JSONDecoder()
         do {
-            
+
             let accounts = try decoder.decode([AccountsModel].self, from: jsonData)
-            
+
             for account in accounts {
-                
+
                 accountsArray.append(account)
                 titlesArray.append(account.title + ": " + account.currency + " " + String(account.balance))
-                
+
             }
-            
+
         } catch {
             print("decode error")
         }
     }
     
+
     func loadJson(fromURLString urlString: String,
                   completion: @escaping (Result<Data, Error>) -> Void) {
 
