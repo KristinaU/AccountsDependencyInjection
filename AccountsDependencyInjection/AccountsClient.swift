@@ -23,34 +23,8 @@ class MyDecoder: Decoding {
     }
 }
 
-class AccountsClient {
+class NetworkManager {
     
-    let urlString = "https://my-json-server.typicode.com/KristinaU/AccountsDependencyInjection/accounts"
-    var accountsArray: [AccountsModel] = []
-    var titlesArray: [String] = []
-    var arrayCompletion = false
-    
-    var decoder: Decoding!
-    
-    func parse(jsonData: Data) -> Void {
-
-        do {
-
-            let accounts = try decoder.decode([AccountsModel].self, from: jsonData)
-
-            for account in accounts {
-
-                accountsArray.append(account)
-                titlesArray.append(account.title + ": " + account.currency + " " + String(account.balance))
-
-            }
-
-        } catch {
-            print("decode error")
-        }
-    }
-    
-
     func loadJson(fromURLString urlString: String,
                   completion: @escaping (Result<Data, Error>) -> Void) {
 
@@ -83,10 +57,42 @@ class AccountsClient {
         }
         task.resume()
     }
+    
+}
+
+class AccountsClient {
+    
+    var accountsArray: [AccountsModel] = []
+    var titlesArray: [String] = []
+    var arrayCompletion = false
+    
+    var decoder: Decoding!
+    
+    var networkManager: NetworkManager!
+    
+    var urlString: String!
+    
+    func parse(jsonData: Data) -> Void {
+
+        do {
+
+            let accounts = try decoder.decode([AccountsModel].self, from: jsonData)
+
+            for account in accounts {
+
+                accountsArray.append(account)
+                titlesArray.append(account.title + ": " + account.currency + " " + String(account.balance))
+
+            }
+
+        } catch {
+            print("decode error")
+        }
+    }
 
     func load(completion: @escaping () -> Void) {
 
-        self.loadJson(fromURLString: self.urlString) { (result) in
+        self.networkManager.loadJson(fromURLString: self.urlString) { (result) in
             switch result {
             case .success(let data):
                 print(data)

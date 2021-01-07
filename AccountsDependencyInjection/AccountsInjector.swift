@@ -17,6 +17,10 @@ class AccountsInjector {
         
         client.decoder = MyDecoder()
         
+        client.networkManager = NetworkManager()
+        
+        client.urlString = "https://my-json-server.typicode.com/KristinaU/AccountsDependencyInjection/accounts"
+        
         let viewModel = AccountsViewModel(client: client)
         
         return viewModel
