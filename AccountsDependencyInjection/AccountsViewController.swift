@@ -32,13 +32,13 @@ class AccountsViewController: UIViewController, UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        return viewModel.getList().count
+        return viewModel.getListLength()
         
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell(style: .subtitle, reuseIdentifier: "cell")
-        cell.textLabel?.text = viewModel.getList()[indexPath.row]
+        cell.textLabel?.text = viewModel.getTitleAtPosition(index: indexPath)
         return cell
         
     }

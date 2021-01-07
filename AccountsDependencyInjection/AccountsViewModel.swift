@@ -34,4 +34,11 @@ class AccountsViewModel {
         }
     }
     
+    func getListLength() -> Int {
+        return client.titlesArray.count
+    }
+
+    func getTitleAtPosition(index: IndexPath) -> String {
+        return client.titlesArray[index.row]
+    }
 }
