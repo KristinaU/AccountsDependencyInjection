@@ -29,6 +29,11 @@ class AccountsViewController: UIViewController, UITableViewDataSource {
         
         self.mainTableView.dataSource = self
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        viewModel.load()
+    }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         

@@ -17,8 +17,6 @@ class AccountsInjector {
         
         let viewModel = AccountsViewModel(client: client)
         
-        viewModel.load()
-        
         return viewModel
         
     }
