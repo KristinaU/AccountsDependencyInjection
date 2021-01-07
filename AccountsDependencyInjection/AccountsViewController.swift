@@ -32,7 +32,14 @@ class AccountsViewController: UIViewController, UITableViewDataSource {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        viewModel.load()
+        viewModel.load { [unowned self] in
+            
+            DispatchQueue.main.async {
+                self.mainTableView.reloadData()
+            }
+            
+        }
+        
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

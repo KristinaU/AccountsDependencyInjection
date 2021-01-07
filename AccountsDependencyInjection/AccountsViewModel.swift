@@ -16,8 +16,8 @@ class AccountsViewModel {
          self.client = client
     }
     
-    func load() {
-        self.client.load()
+    func load(completion: @escaping () -> Void) {
+        self.client.load(completion: completion)
     }
     
     func getTitles() -> [String] {

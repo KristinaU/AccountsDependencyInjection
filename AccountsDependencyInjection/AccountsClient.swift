@@ -68,23 +68,19 @@ class AccountsClient {
         task.resume()
     }
 
-    func load() {
-
-        let semaphore = DispatchSemaphore(value: 0)
+    func load(completion: @escaping () -> Void) {
 
         self.loadJson(fromURLString: self.urlString) { (result) in
             switch result {
             case .success(let data):
                 print(data)
                 self.parse(jsonData: data)
-                self.arrayCompletion = true
 
             case .failure(let error):
                 print(error)
             }
-            semaphore.signal()
+            completion()
         }
-        _ = semaphore.wait(wallTimeout: .distantFuture)
     }
 
 }
