@@ -15,6 +15,8 @@ class AccountsInjector {
         
         let client = AccountsClient()
         
+        client.decoder = MyDecoder()
+        
         let viewModel = AccountsViewModel(client: client)
         
         return viewModel

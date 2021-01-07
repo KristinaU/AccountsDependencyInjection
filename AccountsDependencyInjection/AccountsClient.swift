@@ -8,6 +8,21 @@
 
 import Foundation
 
+protocol Decoding {
+
+    func decode<T: Decodable>(_ type: T.Type, from data: Data) throws -> T
+    
+}
+
+class MyDecoder: Decoding {
+    
+    private let decoder: JSONDecoder = JSONDecoder()
+    
+    func decode<T : Decodable>(_ type: T.Type, from data: Data) throws -> T {
+        return try decoder.decode(type, from: data)
+    }
+}
+
 class AccountsClient {
     
     let urlString = "https://my-json-server.typicode.com/KristinaU/AccountsDependencyInjection/accounts"
@@ -15,9 +30,10 @@ class AccountsClient {
     var titlesArray: [String] = []
     var arrayCompletion = false
     
+    var decoder: Decoding!
+    
     func parse(jsonData: Data) -> Void {
 
-        let decoder = JSONDecoder()
         do {
 
             let accounts = try decoder.decode([AccountsModel].self, from: jsonData)

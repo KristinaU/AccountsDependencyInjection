@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct AccountsModel: Decodable {
+struct AccountsModel: Codable {
     
     var openingDate: String
     var kind: String
