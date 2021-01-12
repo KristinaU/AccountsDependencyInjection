@@ -34,10 +34,26 @@ class AccountsModelTests: XCTestCase {
         
     }
     
+    func testOpeningDateFormat() {
+        var result = false
+        if let obj = model.openingDate as? String {
+           result = true
+        }
+        XCTAssertTrue(result)
+    }
+    
     func testOpeningDate() {
         
         XCTAssertEqual(model.openingDate, "02.02.2020")
         
+    }
+    
+    func testKindFormat() {
+        var result = false
+        if let obj = model.kind as? String {
+           result = true
+        }
+        XCTAssertTrue(result)
     }
     
     func testKind() {
@@ -46,10 +62,26 @@ class AccountsModelTests: XCTestCase {
         
     }
     
+    func testTitleFormat() {
+        var result = false
+        if let obj = model.title as? String {
+           result = true
+        }
+        XCTAssertTrue(result)
+    }
+    
     func testTitle() {
         
         XCTAssertEqual(model.title, "Account")
         
+    }
+    
+    func testNumberFormat() {
+        var result = false
+        if let obj = model.number as? String {
+           result = true
+        }
+        XCTAssertTrue(result)
     }
     
     func testNumber() {
@@ -58,16 +90,40 @@ class AccountsModelTests: XCTestCase {
         
     }
     
+    func testBalanceFormat() {
+        var result = false
+        if let obj = model.balance as? Double {
+           result = true
+        }
+        XCTAssertTrue(result)
+    }
+    
     func testBalance() {
         
         XCTAssertEqual(model.balance, 100.2)
         
     }
     
+    func testCurrencyFormat() {
+        var result = false
+        if let obj = model.currency as? String {
+           result = true
+        }
+        XCTAssertTrue(result)
+    }
+    
     func testCurrency() {
         
         XCTAssertEqual(model.currency, "GBP")
         
+    }
+    
+    func testTransactionsFormat() {
+        var result = false
+        if let obj = model.transactions as? [String] {
+           result = true
+        }
+        XCTAssertTrue(result)
     }
     
     func testTransactions() {
